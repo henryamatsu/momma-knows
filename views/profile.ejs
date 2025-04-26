@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>Gold</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="theme-default.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-_id=<%= user._id %>>
+
+    <header class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </header>
+    <% if (user.local.email) { %>
+    <main>
+        <section class="gold-buttons">
+            <h2>Gold: <span id="gold-display"><%= user.local.gold !== undefined ? user.local.gold : 0 %></span></h2>
+            <div class="button-panel">
+                <button id="gold-button-1" class="false-shadow line-shadow clickable"><img src="/img/sun.svg"/></button>
+                <button id="gold-button-2" class="false-shadow line-shadow clickable"><img src="/img/moon.svg"/></button>
+                <button id="gold-button-3" class="false-shadow line-shadow clickable"><img src="/img/star.svg"/></button>
+                <button id="gold-button-4" class="false-shadow line-shadow clickable"><img src="/img/nova.svg"/></button>
+                <button id="reset-button"  class="false-shadow line-shadow clickable"><img src="/img/blink.svg"/></button>
+            </div>        
+        </section>
+    </main>
+    <% } %>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
