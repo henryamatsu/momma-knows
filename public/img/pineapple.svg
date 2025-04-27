@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 1.6 1.6"
+   id="icons"
+   version="1.1"
+   sodipodi:docname="pineapple.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="12.133952"
+     inkscape:cx="19.985244"
+     inkscape:cy="23.652639"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="icons" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#fddc49;}.cls-2{fill:#e8c631;}</style>
+  </defs>
+  <title
+     id="title1">Pineapple</title>
+  <g
+     id="pineapple"
+     transform="matrix(2,0,0,2,0.84447638,-0.0375)"
+     style="stroke-width:0.5">
+    <path
+       class="cls-1"
+       d="m 0.19650181,0.0375 a 0.1625,0.1625 0 1 0 0.1625,0.1625 0.1625,0.1625 0 0 0 -0.1625,-0.1625 z M 0.23187681,0.235375 0.19650181,0.25 0.16112681,0.235375 0.14650181,0.2 0.16112681,0.164625 0.19650181,0.15 0.23187681,0.164625 0.24650181,0.2 Z"
+       id="path1"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="M 0.19650181,0.34375 A 0.00625,0.00625 0 0 1 0.19025181,0.3375 V 0.275 a 0.00625,0.00625 0 1 1 0.0125,0 v 0.0625 a 0.00625,0.00625 0 0 1 -0.00625,0.00625 z"
+       id="path2"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 0.19650181,0.131125 a 0.00625,0.00625 0 0 1 -0.00625,-0.00625 V 0.0625 a 0.00625,0.00625 0 0 1 0.0125,0 V 0.125 a 0.00625,0.00625 0 0 1 -0.00625,0.006125 z"
+       id="path3"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 0.12150181,0.20625 h -0.0625 a 0.00625,0.00625 0 0 1 0,-0.0125 h 0.0625 a 0.00625,0.00625 0 1 1 0,0.0125 z"
+       id="path4"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 0.33400181,0.20625 h -0.0625 a 0.00625,0.00625 0 1 1 0,-0.0125 h 0.0625 a 0.00625,0.00625 0 0 1 0,0.0125 z"
+       id="path5"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="M 0.14337681,0.153125 A 0.00625,0.00625 0 0 1 0.13900181,0.15125 l -0.044125,-0.044 a 0.00627557,0.00627558 0 0 1 0.008875,-0.008875 l 0.044,0.044125 a 0.00625,0.00625 0 0 1 -0.004375,0.010625 z"
+       id="path6"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="M 0.29375181,0.3035 A 0.00625,0.00625 0 0 1 0.28937681,0.301625 L 0.24525181,0.2575 a 0.00627557,0.00627558 0 0 1 0.008875,-0.008875 l 0.044125,0.044125 a 0.00625,0.00625 0 0 1 -0.004375,0.010625 z"
+       id="path7"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 0.09925181,0.3035 a 0.00625,0.00625 0 0 1 -0.004375,-0.010625 l 0.044125,-0.044125 a 0.00627557,0.00627558 0 0 1 0.008875,0.008875 l -0.044125,0.044 a 0.00625,0.00625 0 0 1 -0.0045,0.001875 z"
+       id="path8"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="M 0.24962681,0.153125 A 0.00625,0.00625 0 0 1 0.24525181,0.1425 l 0.044125,-0.044125 a 0.00627557,0.00627558 0 0 1 0.008875,0.008875 l -0.04425,0.044 a 0.00625,0.00625 0 0 1 -0.004375,0.001875 z"
+       id="path9"
+       style="stroke-width:0.5" />
+  </g>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Pineapple</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

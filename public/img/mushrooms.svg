@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 1.6 1.6"
+   id="icons"
+   version="1.1"
+   sodipodi:docname="mushrooms.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="17.16"
+     inkscape:cx="15.122378"
+     inkscape:cy="18.589744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="icons" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#ddd4d1;}.cls-2{fill:#cdbfbb;}.cls-3{fill:#bcaaa4;}</style>
+  </defs>
+  <title
+     id="title1">Mushrooms</title>
+  <g
+     id="mushroom"
+     transform="matrix(2,0,0,2.0000043,0.8050003,0.86069349)"
+     style="stroke-width:0.5">
+    <path
+       class="cls-1"
+       d="m 0.18839295,0.0258932 h 0.0232139 a 0.150893,0.15089282 0 0 1 0.150893,0.1508928 v 0.011607 a 0.03482146,0.03482142 0 0 1 -0.034821,0.0348216 H 0.07232135 A 0.03482146,0.03482142 0 0 1 0.03749985,0.1883931 V 0.176786 a 0.150893,0.15089282 0 0 1 0.1508931,-0.1508928 z"
+       id="path1"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 0.18839295,0.0258932 h 0.0232139 a 0.150893,0.15089282 0 0 1 0.150893,0.1508928 v 0.011607 a 0.03482146,0.03482142 0 0 1 -0.034821,0.0348216 H 0.07232135 A 0.03482146,0.03482142 0 0 1 0.03749985,0.1883931 V 0.176786 a 0.150893,0.15089282 0 0 1 0.1508931,-0.1508928 z"
+       id="path2"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-1"
+       d="M 0.21160725,0.0491075 H 0.18839295 A 0.12767869,0.12767854 0 0 0 0.06071415,0.176786 V 0.188393 A 0.01160715,0.01160714 0 0 0 0.07232115,0.2 h 0.078 v 0.1276785 a 0.02321431,0.02321428 0 0 0 0.023214,0.023214 h 0.052812 a 0.02321431,0.02321428 0 0 0 0.023214,-0.023214 V 0.2000003 h 0.078116 A 0.01160715,0.01160714 0 0 0 0.33928585,0.1883931 V 0.176786 A 0.12767869,0.12767854 0 0 0 0.21160725,0.0491075 Z"
+       id="path3"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-3"
+       d="m 0.27289295,0.1515985 h 0.00325 a 0.02321431,0.02321428 0 0 1 0.023214,0.023214 v 0 a 0.02518752,0.02518749 0 0 1 -0.025303,0.025187 h -0.024375 v -0.025187 a 0.02321431,0.02321428 0 0 1 0.023214,-0.023214 z"
+       id="path4"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-3"
+       d="m 0.12397325,0.1515985 h 0.00325 a 0.02321431,0.02321428 0 0 1 0.023214,0.023214 v 0.025187 h -0.024491 a 0.02518752,0.02518749 0 0 1 -0.025187,-0.025187 v 0 a 0.02321431,0.02321428 0 0 1 0.023214,-0.023214 z"
+       id="path5"
+       style="stroke-width:0.5" />
+  </g>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Mushrooms</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

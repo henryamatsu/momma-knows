@@ -1,46 +1,123 @@
-const goldDisplay = document.querySelector("#gold-display");
-const _id = document.body.dataset._id;
+class MommaKnowsPizza {
+  constructor() {
+    this._id = document.body.dataset._id;
 
-document.addEventListener("click", event => {
-  if (event.target.localName !== "button") return;
-  let buttonType = 0;
+    this.setupQuerySelectors();
+    this.setupEventListeners();
 
-  const id = event.target.id;
-  
-  switch (id) {
-    case "gold-button-1":
-      buttonType = 1;
-      break;
-    case "gold-button-2":
-      buttonType = 2;
-      break;
-    case "gold-button-3":
-      buttonType = 3;
-      break;
-    case "gold-button-4":
-      buttonType = 4;
-      break;
-    case "reset-button":
-      buttonType = 5;
-      break;
+    this.updatePastOrders();
   }
 
-  console.log(buttonType);
+  setupQuerySelectors() {
+    this.pizzaDisplay = document.querySelector(".pizza-display");
+    this.pastPizzaDisplays = document.querySelectorAll(".past-orders > .pizza-display");
+    this.orderMessageElement = document.querySelector(".order-message");
+  
+    this.topping1CheckBox = document.querySelector("#topping-1");
+    this.topping2CheckBox = document.querySelector("#topping-2");
+    this.topping3CheckBox = document.querySelector("#topping-3");
+    this.topping4CheckBox = document.querySelector("#topping-4");  
+  }
 
-  if (buttonType !== 0) {
-    fetch("/getGold", {
+  setupEventListeners() {
+    document.addEventListener("click", event => {  
+      if (event.target.localName === "input") {
+        this.updateMainPizza();
+      }
+      else if (event.target.id === "order-button") {  
+        this.orderPizza();
+      }
+      else if (event.target.classList.contains("past-order")) {
+        this.selectPastOrder(event.target.dataset.index);
+      }
+    });
+  }
+
+  updateMainPizza() {
+    this.toppings = [];
+      
+    if (this.topping1CheckBox.checked) this.toppings.push(1);
+    if (this.topping2CheckBox.checked) this.toppings.push(2);
+    if (this.topping3CheckBox.checked) this.toppings.push(3);
+    if (this.topping4CheckBox.checked) this.toppings.push(4);
+    
+    this.updatePizzaDisplay(this.toppings, this.pizzaDisplay);
+  }
+
+  updatePizzaDisplay(toppings, pizzaElement) {
+    let toppingStyle = "";
+  
+    if (toppings.length > 0) {
+      toppingStyle += "background-image:";
+      const svgs = [];
+  
+      if (toppings.includes(1)) {
+        svgs.push("url(img/pepperoni.svg)");
+      }
+      if (toppings.includes(2)) {
+        svgs.push("url(img/mushrooms.svg)");
+      }
+      if (toppings.includes(3)) {
+        svgs.push("url(img/pineapple.svg)");
+      }
+      if (toppings.includes(4)) {
+        svgs.push("url(img/anchovies.svg)");
+      }
+  
+      toppingStyle += svgs.join(",") + ";";
+    }
+  
+    pizzaElement.style = toppingStyle;
+  }
+
+  async updatePastOrders(pastOrders = []) {
+    if (pastOrders.length === 0) {
+      const res = await fetch("/getPastOrders", {
+        method: "put",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({_id: this._id})
+      })
+      const data = await res.json(); 
+      this.pastOrders = data.pastOrders;  
+    }
+    else {
+      this.pastOrders = pastOrders;
+    }
+  
+    this.pastOrders.forEach((toppings, i) => {
+      this.updatePizzaDisplay(toppings, this.pastPizzaDisplays[i]);
+    });
+  }
+
+  selectPastOrder(index) {
+    const toppings = this.pastOrders[index];
+
+    this.topping1CheckBox.checked = toppings.includes(1);
+    this.topping2CheckBox.checked = toppings.includes(2);
+    this.topping3CheckBox.checked = toppings.includes(3);
+    this.topping4CheckBox.checked = toppings.includes(4);
+
+    this.updateMainPizza();
+  }
+
+  orderPizza() {
+    fetch("/orderPizza", {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        _id,
-        buttonType
+        _id: this._id,
+        toppings: this.toppings
       })
     })
     .then(res => res.json())
-    .then(data => {
-      console.log(data);
-
-      goldDisplay.innerText = +goldDisplay.innerText + +data.gold;
-    });  
+    .then(data => {      
+      this.updatePastOrders(data.pastOrders);
+      this.orderMessageElement.style = "display: flex;";
+      setTimeout(() => {
+        this.orderMessageElement.style = "";
+      }, 1000);
+    });
   }
-});
+}
+
+new MommaKnowsPizza();

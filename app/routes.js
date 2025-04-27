@@ -26,155 +26,64 @@ module.exports = function(app, passport, db) {
         res.redirect('/');
     });
 
-// gold acquisition routes ===============================================================
-
-    const arrangements = {
-      1: {
-        1: {
-          1: 0,
-          2: 0,
-          3: 1,
-          4: 0    
-        },
-        2: {
-          1: 2,
-          2: 0,
-          3: -1,
-          4: 0
-        },
-        3: {
-          1: -1,
-          2: 0,
-          3: 0,
-          4: 1
-        },
-        4: {
-          1: 1,
-          2: 0,
-          3: 0,
-          4: 0              
-        }  
-      },
-      2: {
-        1: {
-          1: 0,
-          2: 0,
-          3: 1,
-          4: -2    
-        },
-        2: {
-          1: 2,
-          2: 0,
-          3: 0,
-          4: 0
-        },
-        3: {
-          1: 0,
-          2: 0,
-          3: 3,
-          4: -1
-        },
-        4: {
-          1: 1,
-          2: 0,
-          3: 0,
-          4: 0              
-        }  
-      },
-      3: {
-        1: {
-          1: -3,
-          2: 5,
-          3: 0,
-          4: 0    
-        },
-        2: {
-          1: 0,
-          2: 1,
-          3: 0,
-          4: 0
-        },
-        3: {
-          1: 0,
-          2: 6,
-          3: 0,
-          4: -1
-        },
-        4: {
-          1: 1,
-          2: 0,
-          3: 0,
-          4: 0              
-        }  
-      },
-      4: {
-        1: {
-          1: 0,
-          2: 3,
-          3: 0,
-          4: 0    
-        },
-        2: {
-          1: 100,
-          2: -5,
-          3: 0,
-          4: 0
-        },
-        3: {
-          1: 0,
-          2: 1,
-          3: 0,
-          4: 0
-        },
-        4: {
-          1: 0,
-          2: 10,
-          3: 0,
-          4: 0              
-        }  
-      }
-    };
-
-    app.put('/getGold', async (req, res) => {
+// pizza routes ===============================================================
+    app.put('/orderPizza', async (req, res) => {
       try {
-        let goldAmount = 0;
         const userId = req.app.locals.ObjectId(req.body._id);
         const user = await db.collection('users').findOne({_id: userId});
-        const combinations = user.local.combinations || [];
+        const pastOrders = user.local.pastOrders || [];
+        const newOrder = req.body.toppings;
 
-        if (req.body.buttonType == 5) {
-          combinations.length = 0;
+        if (checkForNewPizza(newOrder, pastOrders)) {
+          pastOrders.push(req.body.toppings);
         }
-        else {
-          if (combinations.length < 3) {
-            combinations.push(req.body.buttonType);
-          }
-    
-          if (combinations.length === 3) {
-            goldAmount = arrangements[combinations[0]][combinations[1]][combinations[2]];
-            combinations.length = 0;
-          }  
+
+        if (pastOrders.length > 3) {
+          pastOrders.shift();
         }
           
         await db.collection('users').findOneAndUpdate({_id:userId}, {
-          $inc: {
-            "local.gold": goldAmount
-          },
           $set: {
-            "local.combinations": combinations,
+            "local.pastOrders": pastOrders,
           }
         }, {
           sort: {_id: -1},
           upsert: true
         })
 
-        res.json({gold: goldAmount})
+        res.json({pastOrders});
       }
       catch (err) {
         console.log(err);
         res.send(err);
       }
     })
+
+    app.put("/getPastOrders", async (req,res) => {
+      try {
+        const userId = req.app.locals.ObjectId(req.body._id);
+        const user = await db.collection('users').findOne({_id: userId});
+        const pastOrders = user.local.pastOrders || [];
+  
+        res.json({pastOrders});  
+      }
+      catch(err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
+    function checkForNewPizza(newOrder, pastOrders) {
+      const orderChecker = new Set();
+
+      pastOrders.forEach(order => {
+        orderChecker.add(order.join());
+      });
+
+      return !orderChecker.has(newOrder.join());
+    }
+
+    app.get ('/getPastPizzas', async (req,res) => {})
 
 // =============================================================================
 // AUTHENTICATE (FIRST LOGIN) ==================================================

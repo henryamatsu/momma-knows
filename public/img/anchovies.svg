@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 1.6 1.6"
+   id="icons"
+   version="1.1"
+   sodipodi:docname="anchovies.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="16"
+     inkscape:cx="-1.71875"
+     inkscape:cy="15.9375"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="icons" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#90a4ae;}.cls-2{fill:#a0b1ba;}.cls-3{fill:#aebcc4;}.cls-4{fill:#546e7a;}.cls-5{fill:#78909c;}</style>
+  </defs>
+  <title
+     id="title1">Anchovies</title>
+  <g
+     id="anchovy"
+     transform="matrix(0.025,0,0,0.025,-4e-5,1.13752)"
+     style="stroke-width:40">
+    <path
+       class="cls-1"
+       d="M 1,7.71 C 1,7.71 4,12 9,12 V 6.05 C 3.43,6.33 1,7.71 1,7.71 Z"
+       id="path4"
+       style="stroke-width:40" />
+    <path
+       class="cls-2"
+       d="M 11,6 C 10.29,6 9.63,6 9,6.05 V 12 C 14,12 27,9 27,9 V 7 C 27,7 18,6 11,6 Z"
+       id="path5"
+       style="stroke-width:40" />
+    <circle
+       class="cls-3"
+       cx="6"
+       cy="8.5"
+       r="1.5"
+       id="circle5"
+       style="stroke-width:40" />
+    <circle
+       class="cls-4"
+       cx="6"
+       cy="8.5"
+       r="1"
+       id="circle6"
+       style="stroke-width:40" />
+    <polygon
+       class="cls-5"
+       points="31,6 31,10 27,9 27,7 "
+       id="polygon6"
+       style="stroke-width:40" />
+    <path
+       class="cls-5"
+       d="m 14,12 h -3 a 1,1 0 0 1 0,-2 h 3 a 1,1 0 0 1 0,2 z"
+       id="path6"
+       style="stroke-width:40" />
+  </g>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Anchovies</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

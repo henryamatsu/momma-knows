@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 1.6 1.6"
+   id="icons"
+   version="1.1"
+   sodipodi:docname="pepperoni.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="6.0669762"
+     inkscape:cx="8.4885779"
+     inkscape:cy="64.941742"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="icons" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#be3333;}.cls-2{fill:#e1a0a0;}</style>
+  </defs>
+  <title
+     id="title1">Pepperoni</title>
+  <g
+     id="pepperoni"
+     transform="matrix(2.0000004,0,0,2.0000004,-3.9625007,-3.9625007)"
+     style="stroke-width:0.5">
+    <circle
+       class="cls-1"
+       cx="2.1624999"
+       cy="2.1624999"
+       id="circle1"
+       style="stroke-width:0.5"
+       r="0.16249996" />
+    <path
+       class="cls-2"
+       d="m 2.1160714,2.0944821 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 0 1 0.016366,0.016366 l -0.013116,0.013348 a 0.01160714,0.01160714 0 0 1 -0.00824,0.00337 z"
+       id="path1"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 2.0630268,2.1807231 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 1 1 0.016366,0.016366 l -0.013116,0.013348 a 0.01160714,0.01160714 0 0 1 -0.00824,0.00337 z"
+       id="path2"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 2.1558839,2.1807231 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 1 1 0.016366,0.016366 l -0.013232,0.013232 a 0.01160714,0.01160714 0 0 1 -0.00812,0.00348 z"
+       id="path3"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 2.248741,2.1807231 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 1 1 0.016366,0.016366 L 2.256867,2.177241 a 0.01160714,0.01160714 0 0 1 -0.00813,0.00348 z"
+       id="path4"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 2.2089285,2.0944821 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 0 1 0.016366,0.016366 l -0.013116,0.013348 a 0.01160714,0.01160714 0 0 1 -0.00824,0.00337 z"
+       id="path5"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 2.1160714,2.2669642 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 0 1 0.016366,0.016366 l -0.013232,0.013232 a 0.01160714,0.01160714 0 0 1 -0.00813,0.00348 z"
+       id="path6"
+       style="stroke-width:0.5" />
+    <path
+       class="cls-2"
+       d="m 2.2089285,2.2669642 a 0.01160714,0.01160714 0 0 1 -0.00824,-0.019848 l 0.013232,-0.013232 a 0.01160714,0.01160714 0 0 1 0.016366,0.016366 l -0.013232,0.013232 a 0.01160714,0.01160714 0 0 1 -0.00813,0.00348 z"
+       id="path7"
+       style="stroke-width:0.5" />
+  </g>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Pepperoni</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Gold</title>
+    <title>Momma Knows Pizza</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="theme-default.css">
     <link rel="stylesheet" href="style.css">
@@ -14,16 +14,24 @@
     </header>
     <% if (user.local.email) { %>
     <main>
-        <section class="gold-buttons">
-            <h2>Gold: <span id="gold-display"><%= user.local.gold !== undefined ? user.local.gold : 0 %></span></h2>
+        <h2>Customize Your Pizza!</h2>
+        <div class="pizza-display">
+        </div>
+        <section class="pizza-buttons">
             <div class="button-panel">
-                <button id="gold-button-1" class="false-shadow line-shadow clickable"><img src="/img/sun.svg"/></button>
-                <button id="gold-button-2" class="false-shadow line-shadow clickable"><img src="/img/moon.svg"/></button>
-                <button id="gold-button-3" class="false-shadow line-shadow clickable"><img src="/img/star.svg"/></button>
-                <button id="gold-button-4" class="false-shadow line-shadow clickable"><img src="/img/nova.svg"/></button>
-                <button id="reset-button"  class="false-shadow line-shadow clickable"><img src="/img/blink.svg"/></button>
+                <label><input id="topping-1" type="checkbox" /> Pepperoni</label>
+                <label><input id="topping-2" type="checkbox" /> Mushrooms</label>
+                <label><input id="topping-3" type="checkbox" /> Pineapple</label>
+                <label><input id="topping-4" type="checkbox" /> Anchovies</label>
+                <button id="order-button"  class="false-shadow line-shadow clickable">Order!</button>
             </div>        
         </section>
+        <section class="past-orders">
+            <div data-index="0" class="pizza-display past-order"></div>
+            <div data-index="1" class="pizza-display past-order"></div>
+            <div data-index="2" class="pizza-display past-order"></div>
+        </section>
+        <div class="order-message"><span>Your pizza is on its way!</span></div>
     </main>
     <% } %>
 
