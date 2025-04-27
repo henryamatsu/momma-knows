@@ -27,6 +27,19 @@ main {
   height: fit-content;
 }
 
+.profile-main {
+  position: relative;
+}
+
+.content > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 5px solid;
+  padding: 20px;
+}
+
 h1 {
   font-size: 3.2rem;
 }
@@ -34,6 +47,9 @@ h1 {
 h2 {
   font-size: 3.2rem;
   margin-bottom: 20px;
+}
+h3 {
+  font-size: 2.4rem;
 }
 
 form {

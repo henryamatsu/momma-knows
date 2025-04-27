@@ -90,7 +90,7 @@ class MommaKnowsPizza {
   }
 
   selectPastOrder(index) {
-    const toppings = this.pastOrders[index];
+    const toppings = this.pastOrders[index] || [];
 
     this.topping1CheckBox.checked = toppings.includes(1);
     this.topping2CheckBox.checked = toppings.includes(2);

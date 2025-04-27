@@ -13,25 +13,32 @@
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </header>
     <% if (user.local.email) { %>
-    <main>
-        <h2>Customize Your Pizza!</h2>
-        <div class="pizza-display">
+    <main class="profile-main">
+        <div class="content">
+            <section>
+                <h2>Customize Your Pizza!</h2>
+                <div class="pizza-display">
+                </div>
+                <div class="pizza-buttons">
+                    <div class="button-panel">
+                        <label><input id="topping-1" type="checkbox" /> Pepperoni</label>
+                        <label><input id="topping-2" type="checkbox" /> Mushrooms</label>
+                        <label><input id="topping-3" type="checkbox" /> Pineapple</label>
+                        <label><input id="topping-4" type="checkbox" /> Anchovies</label>
+                        <button id="order-button"  class="false-shadow line-shadow clickable">Order!</button>
+                    </div>        
+                </div>    
+            </section>
+            <section>
+                <h3>Past Orders</h3>
+                <div class="past-orders">
+                    <div data-index="0" class="pizza-display past-order"></div>
+                    <div data-index="1" class="pizza-display past-order"></div>
+                    <div data-index="2" class="pizza-display past-order"></div>
+                </div>
+                <div class="order-message"><span>Your pizza is on its way!</span></div>    
+            </section>    
         </div>
-        <section class="pizza-buttons">
-            <div class="button-panel">
-                <label><input id="topping-1" type="checkbox" /> Pepperoni</label>
-                <label><input id="topping-2" type="checkbox" /> Mushrooms</label>
-                <label><input id="topping-3" type="checkbox" /> Pineapple</label>
-                <label><input id="topping-4" type="checkbox" /> Anchovies</label>
-                <button id="order-button"  class="false-shadow line-shadow clickable">Order!</button>
-            </div>        
-        </section>
-        <section class="past-orders">
-            <div data-index="0" class="pizza-display past-order"></div>
-            <div data-index="1" class="pizza-display past-order"></div>
-            <div data-index="2" class="pizza-display past-order"></div>
-        </section>
-        <div class="order-message"><span>Your pizza is on its way!</span></div>
     </main>
     <% } %>
 
