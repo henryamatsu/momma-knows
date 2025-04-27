@@ -1,6 +1,7 @@
 class MommaKnowsPizza {
   constructor() {
     this._id = document.body.dataset._id;
+    this.toppings = [];
 
     this.setupQuerySelectors();
     this.setupEventListeners();
@@ -112,7 +113,7 @@ class MommaKnowsPizza {
     .then(res => res.json())
     .then(data => {      
       this.updatePastOrders(data.pastOrders);
-      this.orderMessageElement.style = "display: flex;";
+      this.orderMessageElement.style = "opacity: 1; pointer-events: all;";
       setTimeout(() => {
         this.orderMessageElement.style = "";
       }, 1000);
